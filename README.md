@@ -7,20 +7,22 @@
 # Technologies 
 - Spring MVC
 - Spring Security
-- Spring Data JPA
-- Maven
 - JSP
 - Tomcat
 - MySQL
 - Memcached
 - Rabbitmq
-- ElasticSearch
 # Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+## Database Configuration
+
+This project uses MySQL as the backend database to store application data.
+
+A pre-configured SQL dump file is included in the project to simplify setup:
+src/main/resources/db_backup.sql
+
+To initialize the database, import the dump file using the following command:
+
+mysql -u <username> -p accounts < db_backup.sql
 
 
 # VProfile-Multi-Tier-Web-Application-Deployment

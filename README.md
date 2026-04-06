@@ -22,8 +22,7 @@ src/main/resources/db_backup.sql
 
 To initialize the database, import the dump file using the following command:
 
-mysql -u <username> -p accounts < db_backup.sql
-
+To import the database, use the MySQL command line and load the provided dump file.
 
 # VProfile-Multi-Tier-Web-Application-Deployment
 Deployed a Java-based multi-tier web application across multiple VMs using Vagrant and VirtualBox, implementing services like Nginx, Tomcat, MySQL, Memcached, and RabbitMQ. Automated setup using Infrastructure as Code to simulate a scalable and production-like environment.

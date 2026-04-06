@@ -11,8 +11,8 @@
 - Tomcat
 - MySQL
 - Memcached
-- Rabbitmq
-# Database
+- RabbitMQ
+
 ## Database Configuration
 
 This project uses MySQL as the backend database to store application data.
@@ -26,4 +26,15 @@ mysql -u <username> -p accounts < db_backup.sql
 
 
 # VProfile-Multi-Tier-Web-Application-Deployment
-Deployed a Java-based multi-tier web application across multiple VMs using Vagrant and VirtualBox, implementing services like Nginx, Tomcat, MySQL, Memcached, and RabbitMQ. Automated setup using Infrastructure as Code to simulate a scalable and production-like environment.>
+Deployed a Java-based multi-tier web application across multiple VMs using Vagrant and VirtualBox, implementing services like Nginx, Tomcat, MySQL, Memcached, and RabbitMQ. Automated setup using Infrastructure as Code to simulate a scalable and production-like environment.
+
+
+## Architecture
+
+This project follows a multi-tier architecture:
+
+- Web Layer: Nginx
+- Application Layer: Tomcat
+- Cache Layer: Memcached
+- Messaging Layer: RabbitMQ
+- Database Layer: MySQL
